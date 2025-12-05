@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logi<img src="img/logo.png" alt="Piedra de Luna" class="imagenprincipallogin" />n Piedra de luna</title>
+
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+ <main class="login-wrapper">
+
+    <div class="login-izquierdo">
+        <img src="img/logo.png" alt="Piedra de Luna" class="imagenprincipallogin" />
+    </div>
+
+    <div class="login-derecho">
+
+        <h2>Te damos la bienvenida a este espacio especial</h2>
+        <p>Inhalá, exhalá... preparate para descubrir el maravilloso poder transformador de los aromas. 
+            <br> 
+            <br>
+            usuario= admin@admin.com
+            contraseña= admin123
+
+        </p>
+
+        <div class="errors">
+            <div id="empty_mail" class="error"></div>
+            <div id="empty_psw" class="error"></div>
+            <div id="mail_error" class="error"></div>
+            <div id="psw_error" class="error"></div>
+        </div>
+
+        <form id="form_login" novalidate class="login-form">
+            <input id="id_mail" type="email" placeholder="Email">
+            <input id="id_psw" type="password" placeholder="Contraseña">
+
+            <button id="btn_login" class="btn-principal">Ingresar</button>
+        </form>
+
+    </div>
+
+ </main>
+ <script src="index.js"></script>
+</body>
+</html>

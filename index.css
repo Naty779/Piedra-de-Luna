@@ -1,0 +1,208 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* TIPOGRAFIAS */
+
+h1 {
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size: 64px;
+  line-height: 1.1;
+  color: #6E745F;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+h2 {
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size: 30px;
+  color: #111111;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size: 16px;
+  color: #111111;
+  font-weight: 500;
+}
+
+h4 {
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size: 20px;
+  color: #899F87;
+  font-weight: 500;
+}
+
+p  {
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size: 20px;
+  color: #134111;
+  font-weight: 400;
+}
+
+a {
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size: 12px;
+  color: #111111;
+  font-weight: 400;
+}
+
+body {
+  background: #b6e5ae;
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  height: 90vh;
+  margin: 40px auto;
+  background: #bae7a0;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(8, 61, 8, 0.08);
+}
+
+.login-izquierdo {
+  background: #9fb95f85  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.login-izquierdo h2 {
+  margin-bottom: 18px;
+}
+
+.login-izquierdo p {
+  max-width: 350px;
+  line-height: 1.4;
+}
+
+.login-derecho {
+  padding: 90px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-derecho h2 {
+  color: #065122;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* ERRORES */
+.error {
+  color: #D44;
+  font-size: 14px;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+  display: none;
+}
+
+/* FORMULARIO */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 18px 20px;
+  margin-top: 15px;
+  border-radius: 14px;
+  border: 1px solid #097410;
+  background: #E5E3D7;
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-size: 20px;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-form input::placeholder {
+  color: #175404;
+}
+
+.login-form input:focus {
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  border-color: #E6E0D9;
+  box-shadow: 0 0 0 3px rgba(4, 93, 4, 0.2);
+}
+
+.btn-principal {
+  background-color: #62802e;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn-principal:hover {
+  background: #0a4801;
+}
+
+@media (max-width: 880px) {
+
+  .login-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto !important;
+    max-width: 600px;
+    margin: 30px auto;
+    .login-derecho h2 {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+}
+  }
+
+  /* FORMULARIO ARRIBA */
+  .login-derecho {
+    order: 1;
+    padding: 50px 30px;
+    text-align: center;
+  }
+
+  /* IMAGEN ABAJO */
+  .login-izquierdo {
+    order: 2;
+    padding: 20px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-izquierdo img,
+  .imagenprincipallogin {
+    width: 85%;
+    max-width: 350px;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  .login-form input {
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+
+  .btn-principal {
+    width: 100%;
+    padding: 14px;
+  }
+}
