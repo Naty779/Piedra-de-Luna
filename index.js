@@ -59,8 +59,9 @@ btnIngresar.addEventListener('click', function (event) {
     console.log("Entramos en el listener");
 
     if (validarForm()) {
-        window.location.href = "/bienvenida.html"
+        window.location.href = "/Piedra-de-Luna/bienvenida.html"
     }
 });
+
 
 
